@@ -23,7 +23,8 @@ protected:
 	int wepDmg;
 	vector<string> inventory = {};
 	//values for either item damage or -999 if it is a consumable(like a code to know if it is a consumable)
-	vector<int> values = {};
+	//ideally we'll probably want item IDs but who cares for this project at the moment
+	vector<int> itemValues = {};
 public:
 	void printInventory();
 	void equipItem(int x);
