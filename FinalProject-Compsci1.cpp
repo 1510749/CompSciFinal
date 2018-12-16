@@ -22,15 +22,22 @@ bool menuScreen() {
 	while (((response != "1") || (response != "2"))) {
 		cin >> response;
 		if (response == "1") {
+			//clear screen and create player
+			printf("\033c");
+			Character Player;
+			//get player's name
+			cout << "Name your character: ";
+			cin >> response;
+			Player.setName(response);
+			//move on to gameplay
 			return false;
 		}
 		else if (response == "2") {
+			//quits program
 			return NULL;
-		}
-	 	
+		}	
 	}
 }
-
 
 int main()
 {
