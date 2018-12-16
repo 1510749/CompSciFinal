@@ -20,13 +20,14 @@ bool menuScreen() {
 	cout << right << setw(34) << "Welcome to [GAME TITLE]" << endl << "---------------------------------------------" << endl;
 	cout << right << setw(20) << "1) Play" << right << setw(10) << "2) Quit" << endl;
 	while (((response != "1") || (response != "2"))) {
-			cin >> response;
-			if (response == "1") {
-				return false;
-			}
-			else if (response == "2") {
- 			return NULL;
-	 	}
+		cin >> response;
+		if (response == "1") {
+			return false;
+		}
+		else if (response == "2") {
+			return NULL;
+		}
+	 	
 	}
 }
 
